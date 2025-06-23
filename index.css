@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(3, 95, 3);
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 15px;
+    margin: 0;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.container {
+    background: linear-gradient(to right, rgb(254, 227, 77), white, white, rgb(254, 227, 77));
+    border-radius: 10px;
+    border: 2px solid black;
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+h1 {
+    color: rgb(96, 71, 8);
+    text-decoration: underline;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+#message-el {
+    font-style: italic;
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: rgb(127, 92, 3);
+    color: white;
+    border-radius: 20px;
+    border: none;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+#cards-el, #sum-el {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+@media (max-width: 500px) {
+    .container {
+        padding: 15px;
+        max-width: 90%;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    button {
+        width: 100%;
+        margin: 8px 0;
+    }
+}
